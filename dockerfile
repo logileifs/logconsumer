@@ -8,6 +8,6 @@ ADD . /app
 WORKDIR /app
 #RUN pip3 install pipenv
 #RUN pipenv install --system
-RUN pip install asyncio-redis
+RUN pip install -r requirements
 
-CMD ["python", "loglistener.py"]
+CMD ["python", "logconsumer.py"]
